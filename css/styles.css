@@ -1,0 +1,122 @@
+ 
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #004aad;
+      color: white;
+      text-align: center;
+      padding: 1.2rem 0;
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+    }
+
+    main {
+      width: 90%;
+      max-width: 1100px;
+      margin: 2rem auto;
+    }
+
+    section {
+      background-color: white;
+      padding: 1.5rem 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      color: #004aad;
+      margin-bottom: 1rem;
+    }
+
+
+    form {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);;
+      gap: 1rem 2rem;
+      margin-top: 1rem;
+    }
+
+    label {
+      font-weight: bold;
+      font-size: 0.95rem;
+      margin-bottom: 0.3rem;
+      display: block;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 0.6rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 0.95rem;
+      background-color: #fdfdfd;
+      transition: border 0.2s;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      border-color: #004aad;
+      outline: none;
+    }
+
+    button {
+      grid-column: 1 / -1;
+      padding: 0.8rem;
+      background-color: #004aad;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #00337a;
+    }
+
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    th, td {
+      padding: 0.8rem;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #004aad;
+      color: white;
+    }
+
+    tr:hover {
+      background-color: #f1f5ff;
+    }
+  
+    #material{
+        height: 39px;
+        border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 0.95rem;
+      background-color: #fdfdfd;
+      transition: border 0.2s;
+    }
+    #pedido{
+        display: flex;
+        justify-content: space-between;
+        padding: 0.8rem;
+    }
+    
+    button.danger{
+        background-color: rgb(103, 27, 27);
+    }
