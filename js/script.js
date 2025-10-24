@@ -3,10 +3,7 @@ window.onload = ()=>{
     let nombreCliente =document.querySelector("#nombreCliente")
     let form =document.querySelector("#form")
     let arr=[]
-    if(localStorage.getItem("pedido")){
-        arr= JSON.parse(localStorage.getItem("pedido"))
-        imprimirTabla()
-    }
+    
     let tablaPrecio=[
         { id:1, material:"Acero inoxidable", precio: 2000.50 },
         { id:2, material:"Plástico ABS", precio: 10.00 },
@@ -51,5 +48,9 @@ window.onload = ()=>{
         }) 
         document.querySelector("tbody").innerHTML=trs
         document.querySelector("#tdTotal").innerHTML=`<b>$${total.toFixed(2)}</b>`
+    }
+    if(localStorage.getItem("pedido")){
+        arr= JSON.parse(localStorage.getItem("pedido"))
+        imprimirTabla()
     }
 }       
